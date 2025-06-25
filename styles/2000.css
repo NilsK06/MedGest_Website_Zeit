@@ -1,0 +1,149 @@
+ body {
+   background-color: #e0d8b0;
+   font-family: "Times New Roman", Times, serif;
+   color: #800000;
+   margin: 0;
+   padding: 0;
+ }
+
+ #main-table {
+   width: 750px;
+   margin: 20px auto;
+   border: 3px double #800000;
+   background-color: #faf3d1;
+ }
+
+ #header {
+   background-color: #800000;
+   color: #fff;
+   font-size: 28px;
+   font-weight: bold;
+   padding: 15px;
+   text-align: center;
+   text-shadow:
+     1px 1px 0 #a0a0a0,
+     2px 2px 0 #606060;
+   letter-spacing: 2px;
+ }
+
+ #nav {
+   background-color: #deb0b0;
+   padding: 8px 0;
+   text-align: center;
+   border-bottom: 2px solid #800000;
+ }
+
+ #nav a {
+   font-weight: bold;
+   text-decoration: none;
+   color: #800000;
+   margin: 0 12px;
+   font-size: 14px;
+ }
+
+ #nav a:hover {
+   text-decoration: underline;
+   color: #303030;
+ }
+
+ #content {
+   padding: 15px 20px;
+ }
+
+ h2 {
+   font-size: 20px;
+   margin-top: 0;
+   border-bottom: 2px solid #800000;
+   padding-bottom: 5px;
+ }
+
+ table.car-list {
+   width: 100%;
+   border-collapse: collapse;
+   font-size: 13px;
+   font-family: Georgia, serif;
+ }
+
+ table.car-list th {
+   background-color: #800000;
+   color: white;
+   font-weight: normal;
+   border: 1px solid #800000;
+   padding: 6px;
+   text-align: center;
+ }
+
+ table.car-list td {
+   background-color: #fffff0;
+   border: 1px solid #800000;
+   padding: 6px;
+   text-align: center;
+   vertical-align: middle;
+ }
+
+ table.car-list img {
+   width: 120px;
+   height: 80px;
+   border: 2px inset #800000;
+ }
+
+ a.details-link {
+   font-family: "Arial", sans-serif;
+   font-size: 12px;
+   color: #000080;
+   font-weight: bold;
+   text-decoration: none;
+ }
+
+ a.details-link:hover {
+   text-decoration: underline;
+   color: #303030;
+ }
+
+ #footer {
+   border-top: 1px solid #800000;
+   text-align: center;
+   font-size: 10px;
+   color: #800000;
+   padding: 8px 0;
+   font-style: italic;
+ }
+
+ @media only screen and (max-width: 600px) {
+   #main-table {
+     width: 100%;
+     margin: 10px auto;
+     border-width: 2px;
+   }
+
+   table.car-list img {
+     width: 90px;
+     height: 60px;
+   }
+
+   #nav a {
+     font-size: 12px;
+     margin: 0 7px;
+   }
+ }
+
+ .button {
+   text-decoration: none;
+   background-color: #e60028;
+   padding: 4px;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 1.5em;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .back {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+ }
+
+ .button:hover {
+   background-color: #880017;
+   transform: translateY(-10px);
+ }

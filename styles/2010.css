@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#banner {
+    background: linear-gradient(to right, #e60028, #950019c5);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.knopf {
+    background-color: #4c89af;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button.small {
+    background-color: #e60028;
+}
+
+#featured-cars {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.car {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+    width: 90%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.car img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to right, #e60028, #950019c5);
+    color: white;
+    clear: both;
+}
+
+.preis {
+    font-size: 1.2em;
+    color: #0e8312;
+    font-weight: bold;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #e60028;
+    padding: 4px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #880017;
+    transform: translateY(-10px);
+}

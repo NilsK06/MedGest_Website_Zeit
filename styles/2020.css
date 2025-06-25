@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: #e60028;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #000000;
+  outline: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #e60028;
+  user-select: none;
+  margin-left: -645px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e60028, #b6001e);
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem 5rem;
+  clip-path: ellipse(100% 85% at 50% 15%);
+  background-image: url(../pics/hintergrund_test.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.5);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e0a800;
+  outline: none;
+}
+
+#featured-cars {
+  margin-top: -4rem;
+  padding: 4rem 1rem 4rem;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 30px rgb(0 0 0 / 0.05);
+}
+
+#featured-cars h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.car-card {
+  background: #f0f0f5;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.car-card:hover,
+.car-card:focus-within {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #e60028;
+}
+
+.car-details {
+  padding: 1rem 1.5rem 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.car-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+  user-select: none;
+}
+
+.car-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 0.75rem;
+  user-select: none;
+}
+
+.car-description {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.btn-buy {
+  align-self: flex-start;
+  background-color: #e60028;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+  background-color: #880017;
+  outline: none;
+}
+
+#about {
+  padding: 4rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 6rem auto;
+  color: #555;
+  font-weight: 500;
+}
+
+#about h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 4rem 1rem 6rem;
+  max-width: 600px;
+  margin: 0 auto 6rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.05);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #ced4da;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e60028;
+  outline: none;
+  box-shadow: 0 0 8px rgba(253, 13, 13, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #e60028;
+  color: white;
+  border: none;
+  padding: 0.85rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(253, 13, 13, 0.5);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #e60028;
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #e60028;
+  padding: 4px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #880017;
+  transform: translateY(-10px);
+}
+
+header img {
+  height: 60px;
+  margin-left: 0;
+}

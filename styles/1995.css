@@ -1,0 +1,112 @@
+body {
+    background-color: #00ffff;
+    color: #800000;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 5px inset #000080;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+marquee {
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #000080;
+    padding: 5px;
+    border: 2px solid #ff0000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #ff00ff;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid #000080;
+}
+
+td {
+    border: 2px solid #000080;
+    padding: 10px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #000080;
+}
+
+a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.blink {
+    animation: blink 1s steps(1) infinite;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Courier New", monospace;
+    color: #000080;
+    border-top: 2px inset #ff00ff;
+    padding-top: 10px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #e60028;
+    padding: 4px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #880017;
+    transform: translateY(-10px);
+}
