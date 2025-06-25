@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #ccc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-entry {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-entry.left {
+  left: -5%;
+  text-align: right;
+}
+
+.timeline-entry.right {
+  left: 50%;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+.timeline-entry.left::before {
+  right: -10px;
+}
+
+.timeline-entry.right::before {
+  left: -10px;
+}
+
+.timeline-entry .content {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+body {
+  background-image: url(./hintergrund_Zeitstrahl.webp);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+.timeline-entry.left:hover .content {
+  transform: translateY(-2px);
+}
+
+.timeline-entry.right:hover .content {
+  transform: translateY(-2px);
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 800px;
+  display: block;
+  margin: auto;
+}
