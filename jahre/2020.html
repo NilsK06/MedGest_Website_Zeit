@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HSD - Motors</title>
+    <link href="../styles/2020.css" rel="stylesheet" />
+    <link href="../images.jpeg" rel="icon" type="icon">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav aria-label="Hauptnavigation">
+          <img src="../images.jpeg" alt="logo" usemap="#startseite"><a href="#" class="logo" tabindex="0"> - Motors</a>
+          <ul>
+            <li><a href="#featured-cars">Angebote</a></li>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <map name="startseite">
+      <area shape="rect" coords="0,0,255,255" alt="logo" href="./2020.html">
+    </map>
+    <main>
+      <section class="hero" role="banner" aria-label="Hauptbanner">
+        <h1>Finden Sie Ihr Traumauto bei uns</h1>
+        <p>Große Auswahl an Neuwagen & Gebrauchtwagen – Willkommen bei Ihrem modernen Autohändler.</p>
+        <button class="btn-primary" onclick="alert('Vielen Dank für Ihr Interesse!')">Jetzt entdecken</button>
+      </section>
+
+      <section id="featured-cars" aria-label="Ausgewählte Autos">
+        <h2>Top Autos im Angebot</h2>
+        <div class="cars-grid">
+          <article class="car-card" tabindex="0" role="region" aria-label="Auto: Audi A5">
+            <img src="../pics/audi_2020.jpeg" alt="Roter Sportwagen" class="car-image" />
+            <div class="car-details">
+              <h3 class="car-title">Audi A5 Cabriolet</h3>
+              <p class="car-price">€27.990</p>
+              <p class="car-description">Gebraucht • EZ 08/2020 • 58.661 km • 140 kW&nbsp;(190&nbsp;PS) • Benzin</p>
+              <a class="btn-buy" href="">Jetzt kaufen</a>
+            </div>
+          </article>
+
+          <article class="car-card" tabindex="0" role="region" aria-label="Auto: Familien SUV Schwarz">
+            <img src="../pics/porsche_2020.jpeg" alt="Schwarzer Familien SUV" class="car-image" />
+            <div class="car-details">
+              <h3 class="car-title">Porsche 922 GT3 RS</h3>
+              <p class="car-price">€334.800</p>
+              <p class="car-description">Unfallfrei • EZ 04/2024 • 1.028 km • 386 kW (535 PS) • Benzin</p>
+              <a class="btn-buy" href="">Jetzt kaufen</a>
+            </div>
+          </article>
+
+          <article class="car-card" tabindex="0" role="region" aria-label="Auto: Kompaktwagen Weiß">
+            <img src="../pics/ford_2020.jpeg" alt="Weißer Kompaktwagen" class="car-image" />
+            <div class="car-details">
+              <h3 class="car-title">Ford F100 1955er Pickup</h3>
+              <p class="car-price">€41.960</p>
+              <p class="car-description">Unfallfrei • EZ 06/1955 • 31 km • 221 kW (300 PS) • Benzin</p>
+              <a class="btn-buy" href="">Jetzt kaufen</a>
+            </div>
+          </article>
+
+          <article class="car-card" tabindex="0" role="region" aria-label="Auto: Kompaktwagen Weiß">
+            <img src="../pics/mercedes_2020.jpeg" alt="Weißer Kompaktwagen" class="car-image" />
+            <div class="car-details">
+              <h3 class="car-title">Mercedes-Benz E 200</h3>
+              <p class="car-price">€146.900</p>
+              <p class="car-description">Unfallfrei • EZ 09/2020 • 22.425 km • 410 kW (557 PS) • Benzin</p>
+              <a class="btn-buy" href="">Jetzt kaufen</a>
+            </div>
+          </article>
+
+          <article class="car-card" tabindex="0" role="region" aria-label="Auto: Kompaktwagen Weiß">
+            <img src="../pics/bmw_2020.jpeg" alt="Weißer Kompaktwagen" class="car-image" />
+            <div class="car-details">
+              <h3 class="car-title">BMW M4 Competition</h3>
+              <p class="car-price">€58.990</p>
+              <p class="car-description">Reparierter Unfallschaden • EZ 12/2020 • 18.880 km • 331 kW (450 PS) • Benzin</p>
+              <a class="btn-buy" href="">Jetzt kaufen</a>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+      <section id="about" tabindex="0" aria-label="Über Uns">
+        <h2>Über Uns</h2>
+        <p>
+          Wir sind ein engagiertes Team aus Studenten der Hochschule-Düsseldor, die zusammen eine Autoverkaufsplattform
+          auf die Beine gestellt habwn (Ich bin eigentlich ein einzelner Student aber klingt besser wenn man denkt es sind
+          mehr).
+        </p>
+      </section>
+
+      <section id="contact" aria-label="Kontaktformular">
+        <h2>Kontaktieren Sie uns</h2>
+        <form onsubmit="handleSubmit(event)" novalidate>
+          <label for="name" class="visually-hidden">Name</label>
+          <input id="name" name="name" type="text" placeholder="Ihr Name" required aria-required="true" />
+
+          <label for="email" class="visually-hidden">E-Mail</label>
+          <input id="email" name="email" type="email" placeholder="Ihre E-Mail" required aria-required="true" />
+
+          <label for="message" class="visually-hidden">Nachricht</label>
+          <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="5" required
+            aria-required="true"></textarea>
+
+          <button type="submit">Nachricht senden</button>
+        </form>
+      </section>
+    </main>
+    <div class="back">
+      <a href="../index.html" class="button">Zeitstrahl</a>
+    </div>
+    <footer>
+      &copy; 2024 HSD Motors - Alle Rechte vorbehalten
+    </footer>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        if (!form.checkValidity()) {
+          alert('Bitte füllen Sie alle Pflichtfelder korrekt aus.');
+          return;
+        }
+        alert('Vielen Dank für Ihre Nachricht! Wir melden uns bald bei Ihnen.');
+        form.reset();
+      }
+    </script>
+  </body>
+
+</html>
